@@ -6,12 +6,10 @@
 		<driver>org.postgresql.Driver</driver>
 		<!--<url>jdbc:postgresql:postgres://vbkxmhcwhsnoxe:ba3232ca7f43cbd24ae67032e8a29a530e7f2e50b7a68b7d9e63ff545e6d04fb@ec2-54-243-197-120.compute-1.amazonaws.com:5432/d3cledlk3uuch6</url>-->
  
-		<url>jdbc:postgresql://ec2-54-243-197-120.compute-1.amazonaws.com/d3cledlk3uuch6</url>
+		<url>jdbc:postgresql://ec2-54-243-197-120.compute-1.amazonaws.com/d3cledlk3uuch6?sslmode=require</url>
 		<user>vbkxmhcwhsnoxe</user>
 		<password>ba3232ca7f43cbd24ae67032e8a29a530e7f2e50b7a68b7d9e63ff545e6d04fb</password>
 	</jdbc>
-
-
 
 	<generator>
 		<!-- The default code generator. You can override this one, to generate 
@@ -80,7 +78,7 @@
 			<packageName>com.api.jooq</packageName>
 			<encoding>UTF8</encoding>
 			<!-- The destination directory of your generated classes -->
-			<directory>./src/main/java</directory>
+			<directory>../src/main/java</directory>
 		</target>
 	</generator>
 </configuration>
